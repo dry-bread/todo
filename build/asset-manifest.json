@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.a86ee334.chunk.css",
-    "main.js": "/static/js/main.f070d036.chunk.js",
-    "main.js.map": "/static/js/main.f070d036.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ba9668b7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ba9668b7.js.map",
-    "static/css/2.04ff9426.chunk.css": "/static/css/2.04ff9426.chunk.css",
-    "static/js/2.d43b1cbb.chunk.js": "/static/js/2.d43b1cbb.chunk.js",
-    "static/js/2.d43b1cbb.chunk.js.map": "/static/js/2.d43b1cbb.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2614b3fa782efba58a1c1a63ecf1edd6.js": "/precache-manifest.2614b3fa782efba58a1c1a63ecf1edd6.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.04ff9426.chunk.css.map": "/static/css/2.04ff9426.chunk.css.map",
-    "static/css/main.a86ee334.chunk.css.map": "/static/css/main.a86ee334.chunk.css.map",
-    "static/js/2.d43b1cbb.chunk.js.LICENSE.txt": "/static/js/2.d43b1cbb.chunk.js.LICENSE.txt",
-    "static/media/addMoreEventLogo.svg": "/static/media/addMoreEventLogo.26490a3c.svg"
+    "main.css": "./static/css/main.a86ee334.chunk.css",
+    "main.js": "./static/js/main.e3de70e9.chunk.js",
+    "main.js.map": "./static/js/main.e3de70e9.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.af5d3437.js",
+    "runtime-main.js.map": "./static/js/runtime-main.af5d3437.js.map",
+    "static/css/2.04ff9426.chunk.css": "./static/css/2.04ff9426.chunk.css",
+    "static/js/2.0f087608.chunk.js": "./static/js/2.0f087608.chunk.js",
+    "static/js/2.0f087608.chunk.js.map": "./static/js/2.0f087608.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.64348a4c17660a9dddfb1264d9785bdb.js": "./precache-manifest.64348a4c17660a9dddfb1264d9785bdb.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.04ff9426.chunk.css.map": "./static/css/2.04ff9426.chunk.css.map",
+    "static/css/main.a86ee334.chunk.css.map": "./static/css/main.a86ee334.chunk.css.map",
+    "static/js/2.0f087608.chunk.js.LICENSE.txt": "./static/js/2.0f087608.chunk.js.LICENSE.txt",
+    "static/media/addMoreEventLogo.svg": "./static/media/addMoreEventLogo.26490a3c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba9668b7.js",
+    "static/js/runtime-main.af5d3437.js",
     "static/css/2.04ff9426.chunk.css",
-    "static/js/2.d43b1cbb.chunk.js",
+    "static/js/2.0f087608.chunk.js",
     "static/css/main.a86ee334.chunk.css",
-    "static/js/main.f070d036.chunk.js"
+    "static/js/main.e3de70e9.chunk.js"
   ]
 }
