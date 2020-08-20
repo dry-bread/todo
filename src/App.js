@@ -1,79 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import addMoreEventLogo from './addMoreEventLogo.svg';
+import React, { useState } from 'react';
+import { Layout,Calendar ,Avatar} from 'antd';
 import './App.css';
-import { Formik } from 'formik';
+import "antd/dist/antd.css";
+import 'moment/locale/zh-cn';
+import NewEvent from './NewEvent'
+import TodayTask from './TodayTask';
+import { UserOutlined } from '@ant-design/icons';
+import LoginIn from './LoginIn'
 
 
-
-class NewEvent extends React.Component{
-  constructor(props){
-    super(props);
-    this.state={
-      title:'',
-      startTime:{},
-      finalTime:{},
-      requiedTime:0,
-      notes:'',
-    };
-
-  }
-  
-  render(){
-    return (<div className="NewEvent">
-      <form >
-        <label className="eventTitle">
-          事件标题：
-          <input type="text" value={this.state.title}></input>
-        </label>
-        <label className="timeHorizon">
-          设置时间范围：
-          <label>
-            开始时间：
-            <input type="data" className="startTime"></input>
-          </label>
-          <label>
-            终止时间：
-            <input type="data" className="finalTime"></input>
-          </label>
-        </label>
-        <label className="eventNote">
-          备注：
-          <textarea></textarea>
-        </label>
-      </form>
-
-    </div>);
-  }
-}
-
-class AddMoreEvent extends React.Component{
-  render(){
-    return (<div className="AddMoreEvent">
-      <img src={addMoreEventLogo} className="AddMoreEvent-logo" alt="点此添加事件" title="添加事件"/>
-    </div>
-    );
-  }
-}
+const { Header, Footer, Sider, Content } = Layout;
 
 function App() {
+  const [headerTip,setHeaderTip]=useState('今日待办')
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <AddMoreEvent/>
-      </header>
+      <Layout>
+        <Sider style={{backgroundColor:'white'}}>
+          <Avatar size={100} icon={<UserOutlined />} style={{marginTop:'5vh'}}/>
+          <p>你好</p>
+        </Sider>
+        <Layout>
+          <Header style={{color:'white',height:'10vh'}} >{headerTip}</Header>
+          <Layout>
+            <Content style={{height:'85vh'}}>
+              <TodayTask/>
+              </Content>
+            <Sider style={{color:'white'}} width={300}>
+            <Calendar fullscreen={false} />
+            </Sider>
+          </Layout>
+          <Footer style={{height:'5vh'}}>曼婷制作</Footer>
+        </Layout>
+      </Layout>
+
+        <NewEvent />
+        <LoginIn  visible={true}/>
     </div>
   );
 }
