@@ -1,68 +1,85 @@
 import React, { useState } from 'react';
 import "antd/dist/antd.css";
-import { Modal, Form, Input, Button, Checkbox, Space } from 'antd';
+import { Form, Input, Button, Space, Card, Col, Row } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { getFileItem } from 'antd/lib/upload/utils';
 import { LoginOutlined } from '@ant-design/icons';
-import './LoginIn.css'
+import './LoginIn.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-const LoginIn = (visible) => {
+const LoginIn = () => {
     const onFinish = values => {
         alert(JSON.stringify(values));
-        
+
     };
+
     const layout = {
-        wrapperCol: { offset:2,span: 20 },
+        wrapperCol: { offset: 2, span: 20 },
     }
     const tailLayout = {
         wrapperCol: { offset: 14 },
     }
+    let history = useHistory();
+    function handleNotLogin(){
+        
+        history.push("/todo");
+   }
     return (
-        <Modal visible={visible}
-            footer={null}
-            title='登录'
-            width={450}
-        >
-            <Form
-                name="normal_login"
-                className="login-form"
-                onFinish={onFinish}
-                {...layout}
-            >
-                <Form.Item
-                    name="username"
-                    rules={[{ required: true, message: '请输入用户名' }]}
+        <Row gutter={16} align="middle" style={{height:'100vh'}}>
+            <Col span={8} offset={8}>
+                <Card
+                    title="登录"
+                    style={{opacity:'0.95'}}
                 >
-                    <Input prefix={<UserOutlined className="site-form-item-icon" />}
-                        placeholder="用户名" />
-                </Form.Item>
-                <Form.Item
-                    name="password"
-                    rules={[{ required: true, message: '请输入密码' }]}
-                >
-                    <Input
-                        prefix={<LockOutlined className="site-form-item-icon" />}
-                        type="password"
-                        placeholder="密码"
-                    />
-                </Form.Item>
-                <Form.Item>
-                    <a className="login-form-forgot" href="">忘记密码</a>
-                </Form.Item>
-
-                <Form.Item {...tailLayout}>
-                    <Space>
-                        <Button type="default">暂不登录</Button>
-                        <Button type="primary" htmlType="submit" className="login-form-button"
+                    <Form
+                        name="normal_login"
+                        className="login-form"
+                        onFinish={onFinish}
+                        {...layout}
+                    >
+                        <Form.Item
+                            name="username"
+                            rules={[{ required: true, message: '请输入用户名' }]}
                         >
-                            登录
+                            <Input prefix={<UserOutlined className="site-form-item-icon" />}
+                                placeholder="用户名" />
+                        </Form.Item>
+                        <Form.Item
+                            name="password"
+                            rules={[{ required: true, message: '请输入密码' }]}
+                        >
+                            <Input
+                                prefix={<LockOutlined className="site-form-item-icon" />}
+                                type="password"
+                                placeholder="密码"
+                            />
+                        </Form.Item>
+                        <Form.Item>
+                            <a className="login-form-forgot" href="">忘记密码</a>
+                        </Form.Item>
+
+                        <Form.Item {...tailLayout}>
+                            <Space>
+                                <Button type="default" onClick={handleNotLogin}>暂不登录</Button>
+                                <Button type="primary" htmlType="submit" className="login-form-button"
+                                >
+                                    登录
         </Button>
-                    </Space>
+                            </Space>
 
-                </Form.Item>
+                        </Form.Item>
 
-            </Form>
-        </Modal>
+                    </Form>
+                </Card>
+            </Col>
+        </Row>
+
     );
 }
 

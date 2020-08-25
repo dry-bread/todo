@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  height: 100vh;
+  background: url(loginBackground.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -12,6 +17,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color:white;
@@ -40,7 +46,8 @@
 .AddMoreEvent-logo{
   position: fixed;
   bottom: 1vmin;
-  height: 15vmin;
+  height: 10vmin;
+  right: 420px;
 }
 
 .AddMoreEvent{
@@ -59,3 +66,4 @@
   color: red;
   font-size: small;
 }
+
