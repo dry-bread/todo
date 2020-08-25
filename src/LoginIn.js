@@ -1,16 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "antd/dist/antd.css";
 import { Form, Input, Button, Space, Card, Col, Row } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import { getFileItem } from 'antd/lib/upload/utils';
-import { LoginOutlined } from '@ant-design/icons';
 import './LoginIn.css';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 const LoginIn = () => {

@@ -3,7 +3,7 @@ import './App.css';
 import LoginIn from './LoginIn'
 import Todo from './Todo'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
