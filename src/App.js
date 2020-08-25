@@ -17,10 +17,10 @@ function App() {
       <div className="App" >
         
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/todo">
             <LoginIn />
           </Route>
-          <Route path="/todo">
+          <Route path="/todo/todo">
             <Todo />
           </Route>
         </Switch>
