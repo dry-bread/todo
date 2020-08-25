@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/todo/static/css/main.7b979449.chunk.css",
-    "main.js": "/todo/static/js/main.b1f51e05.chunk.js",
-    "main.js.map": "/todo/static/js/main.b1f51e05.chunk.js.map",
-    "runtime-main.js": "/todo/static/js/runtime-main.cff99ebd.js",
-    "runtime-main.js.map": "/todo/static/js/runtime-main.cff99ebd.js.map",
-    "static/css/2.04ff9426.chunk.css": "/todo/static/css/2.04ff9426.chunk.css",
-    "static/js/2.a0c16745.chunk.js": "/todo/static/js/2.a0c16745.chunk.js",
-    "static/js/2.a0c16745.chunk.js.map": "/todo/static/js/2.a0c16745.chunk.js.map",
-    "index.html": "/todo/index.html",
-    "precache-manifest.3504b73088bafabdae74cf559a99d462.js": "/todo/precache-manifest.3504b73088bafabdae74cf559a99d462.js",
-    "service-worker.js": "/todo/service-worker.js",
-    "static/css/2.04ff9426.chunk.css.map": "/todo/static/css/2.04ff9426.chunk.css.map",
-    "static/css/main.7b979449.chunk.css.map": "/todo/static/css/main.7b979449.chunk.css.map",
-    "static/js/2.a0c16745.chunk.js.LICENSE.txt": "/todo/static/js/2.a0c16745.chunk.js.LICENSE.txt",
-    "static/media/addMoreEventLogo.svg": "/todo/static/media/addMoreEventLogo.c2af93ec.svg",
-    "static/media/App.css": "/todo/static/media/loginBackground.1569d66f.jpg"
+    "main.css": "./static/css/main.00a0b310.chunk.css",
+    "main.js": "./static/js/main.6a10e36c.chunk.js",
+    "main.js.map": "./static/js/main.6a10e36c.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.af5d3437.js",
+    "runtime-main.js.map": "./static/js/runtime-main.af5d3437.js.map",
+    "static/css/2.04ff9426.chunk.css": "./static/css/2.04ff9426.chunk.css",
+    "static/js/2.7e716486.chunk.js": "./static/js/2.7e716486.chunk.js",
+    "static/js/2.7e716486.chunk.js.map": "./static/js/2.7e716486.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.5cacb1c72abec0a33ed10438417df18b.js": "./precache-manifest.5cacb1c72abec0a33ed10438417df18b.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.04ff9426.chunk.css.map": "./static/css/2.04ff9426.chunk.css.map",
+    "static/css/main.00a0b310.chunk.css.map": "./static/css/main.00a0b310.chunk.css.map",
+    "static/js/2.7e716486.chunk.js.LICENSE.txt": "./static/js/2.7e716486.chunk.js.LICENSE.txt",
+    "static/media/addMoreEventLogo.svg": "./static/media/addMoreEventLogo.c2af93ec.svg",
+    "static/media/App.css": "./static/media/loginBackground.1569d66f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cff99ebd.js",
+    "static/js/runtime-main.af5d3437.js",
     "static/css/2.04ff9426.chunk.css",
-    "static/js/2.a0c16745.chunk.js",
-    "static/css/main.7b979449.chunk.css",
-    "static/js/main.b1f51e05.chunk.js"
+    "static/js/2.7e716486.chunk.js",
+    "static/css/main.00a0b310.chunk.css",
+    "static/js/main.6a10e36c.chunk.js"
   ]
 }
